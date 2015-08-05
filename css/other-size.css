@@ -1,0 +1,55 @@
+/* WIDTH: 1800, 800, 480, 320 */
+
+@media screen and (max-width: 1800px) {
+	/* INDEX SECTION MAIN */
+		.triangle-bg {
+			display:none;
+		}
+	/* --END-- INDEX SECTION MAIN */
+}
+
+@media screen and (max-width: 800px) {
+	.main__center {
+		padding:0 10px;
+	}
+	
+	/* INDEX SECTION MAIN */
+		.logo-top {
+			width:auto;
+		}
+	/* --END-- INDEX SECTION MAIN */
+}
+
+@media screen and (max-width: 480px) {
+	/* TOP MENU */
+		.top-menu {
+			margin-top:0;
+			margin-right:0;
+			padding-left:20px;
+		}
+		
+		.top-menu__item {
+			padding-left:10px;
+			padding-right:10px;
+		}
+	/* --END-- TOP MENU */
+	
+	/* INDEX SECTION MAIN */
+		.index-section_main h1 {
+			font-size:26px;
+			line-height:normal;
+		}
+		
+		/* company num */
+			.company-num__item,
+			.company-num__item:first-child {
+				width:130px;
+				margin-left:3%;
+			}
+		/* --end-- company num */
+	/* --END-- INDEX SECTION MAIN */
+}
+
+@media screen and (max-width: 320px) {
+	
+}
