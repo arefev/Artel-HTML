@@ -25,28 +25,34 @@
 	<script type="text/javascript" src="js/selectize.min.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
 </head>
 <body>
-
-	
-	
-	<section class="index-section index-section_main" data-menu-item="main">
-		<div class="triangle-bg"></div>
-		
-		<div class="main__center">
-			<a href="#" class="logo-top" title="Artel"><img src="images/logo-top.png" alt=""/></a>
+	<header class="header">
+		<div class="main-center">
+			<a href="#" class="logo-top" title="Artel"></a>
 			
 			<div class="top-menu">
 				<nav>
 					<div class="top-menu__item active"><a href="#" title="Новости">Новости</a></div>
-					<div class="top-menu__item"><a href="#" title="О компании">О компании</a></div>
+					<div class="top-menu__item"><a href="#" title="О компании" data-menu-item="about">О компании</a></div>
 					<div class="top-menu__item"><a href="#" title="Услуги и цены">Услуги и цены</a></div>
-					<div class="top-menu__item"><a href="#" title="Проекты">Проекты</a></div>
-					<div class="top-menu__item"><a href="#" title="Контакты">Контакты</a></div>
+					<div class="top-menu__item"><a href="#" title="Проекты" data-menu-item="projects">Проекты</a></div>
+					<div class="top-menu__item"><a href="#" title="Контакты" data-menu-item="contacts">Контакты</a></div>
 					<div class="clear"></div>
 				</nav>
 			</div>
 			<div class="clear"></div>
+		</div>
+	</header>
+
+	
+	
+	<section class="index-section index-section_main" data-menu-item-block="main">
+		<div class="triangle-bg"></div>
+		
+		<div class="main-center">
+			
 			
 			<h1>Строительный альянс<br><span>ArTel Alliance</span></h1>
 			
@@ -86,8 +92,8 @@
 		</div>
 	</section> <!-- end .index-section_main -->
 	
-	<section class="index-section index-section_about" data-menu-item="about">
-		<div class="main__center">
+	<section class="index-section index-section_about" data-menu-item-block="about">
+		<div class="main-center">
 			<h2>ArTel Alliance</h2>
 			
 			<div class="text-two-col">
@@ -111,7 +117,7 @@
 		</div>
 	</section> <!-- end .index-section_main -->
 	
-	<section class="index-section index-section_projects" data-menu-item="projects">
+	<section class="index-section index-section_projects" data-menu-item-block="projects">
 		
 			<h2>Наши проекты</h2>
 			
@@ -174,10 +180,10 @@
 			</div>
 	</section> <!-- end .index-section_main -->
 	
-	<section class="index-section index-section_contacts" data-menu-item="contacts">
+	<section class="index-section index-section_contacts" data-menu-item-block="contacts">
 		<div id="contactsMap" class="index-section_contacts__map"></div>
 		
-		<div class="main__center">
+		<div class="main-center">
 			
 			<div class="contacts">
 				<a href="#" title="Artel"><img src="images/logo-bottom.png" alt=""/></a>
@@ -186,6 +192,34 @@
 			</div>
 			
 		</div>
+		
+		
 	</section> <!-- end .index-section_main -->
+	
+	<footer class="footer">
+		<div class="main-center">
+			<div class="menu-bottom">
+				<a href="#" title="Новости">Новости</a>
+				<a href="#" title="О компании">О компании</a>
+				<a href="#" title="Услуги и цены">Услуги и цены</a>
+				<a href="#" title="Проекты">Проекты</a>
+				<a href="#" title="Контакты">Контакты</a>
+			</div>
+			
+			<div class="social-icons">
+				<a href="#" class="social-icons__item social-icons__item_fb" title=""></a>
+				<a href="#" class="social-icons__item social-icons__item_twitter" title=""></a>
+				<a href="#" class="social-icons__item social-icons__item_basketball" title=""></a>
+				<a href="#" class="social-icons__item social-icons__item_behance" title=""></a>
+				<a href="#" class="social-icons__item social-icons__item_linkedin" title=""></a>
+				<a href="#" class="social-icons__item social-icons__item_pin" title=""></a>
+			</div>
+			
+			<div class="copyright">&copy; 2015 ARTEL</div>
+		</div>
+	</footer>
+	
+	
+	
 	
 </html>
