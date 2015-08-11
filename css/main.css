@@ -754,6 +754,205 @@ body {
 	}
 /* --END-- MAP OBJECTS*/
 
+/* OBJECT DETAIL */
+	.index-section_object {
+		overflow:hidden;
+	}
+	
+	/* background */
+	.object-detail-bg {
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	
+	.object-detail-bg__img {
+		width:100%;
+		height:100%;
+		background-repeat:no-repeat;
+		background-size:cover;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	
+	.object-detail-bg__video {
+		min-width:100%;
+		min-height:100%;
+		width:auto;
+		height:auto;
+		position:absolute;
+		bottom:0;
+		left:0;
+		z-index:1;
+	}
+	
+	.object-detail-bg__hover {
+		width:100%;
+		height:100%;
+		background-image:url("../images/object-image-hover.png");
+		background-repeat:no-repeat;
+		background-size:cover;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:2;
+	}
+	/* --end-- background */
+	
+	.index-section_object .main-center {
+		position:relative;
+		z-index:3;
+		color:#FFF;
+	}
+	
+	.index-section_object h1 {
+		text-align:center;
+		font-size:40px;
+		line-height:60px;
+		position:relative;
+		margin-top:30%;
+		text-transform:uppercase;
+		letter-spacing:0.12em;
+	}
+	
+	.index-section_object h1 span {
+		font-size:60px;
+	}
+	
+	.object-calendar {
+		margin:20% 0 0;
+		padding:52px 0 0;
+		text-align:center;
+		font-weight:bold;
+		font-size:20px;
+		line-height:30px;
+		background:url("../images/icon-calendar.png") no-repeat center top;
+	}
+	
+	/* objects nav */
+	.objects-nav {
+		border-bottom:1px solid #dadada;
+		background:url("../images/objects-nav-bg.jpg") repeat-y center;
+	}
+	
+	.objects-nav__item {
+		width:50%;
+		float:left;
+		padding:35px 37px 35px 0;
+		font-size:16px;
+		color:#7b7b7b;
+		text-decoration:none;
+		text-align:right;
+		position:relative;
+	
+		-webkit-box-sizing: border-box;
+			 -moz-box-sizing: border-box;
+				  box-sizing: border-box;
+	}
+	
+	.objects-nav__item:hover {
+		color:#3c3021;
+	}
+	
+	.objects-nav__item_left {
+		padding-right:0;
+		padding-left:38px;
+		text-align:left;
+	}
+	
+	.objects-nav__item_left:before {
+		content:"";
+		width:11px;
+		height:18px;
+		background:url("../images/objects-nav-arrows.png") no-repeat;
+		position:absolute;
+		top:50%;
+		left:0;
+		margin-top:-9px;
+	}
+	
+	.objects-nav__item_left:hover:before {
+		background-position:0 -19px;
+	}
+	
+	.objects-nav__item_right:before {
+		content:"";
+		width:11px;
+		height:18px;
+		background:url("../images/objects-nav-arrows.png") -12px 0 no-repeat;
+		position:absolute;
+		top:50%;
+		right:0;
+		margin-top:-9px;
+	}
+	
+	.objects-nav__item_right:hover:before {
+		background-position:-12px -19px;
+	}
+	/* --end-- objects nav */
+	
+	/* object content */
+	.object-content {
+		background:url("../images/object-content-bg.jpg") left center no-repeat;
+		background-size:cover;
+		padding:60px 0 130px;
+	}
+	
+	.text-three-col {
+		margin:100px 0 0;
+	}
+	
+	.text-three-col__item {
+		width:33%;
+		float:left;
+		padding:0 10px;
+		text-align:center;
+		font-size:12px;
+		color:#3e3121;
+		text-transform:uppercase;
+		font-weight:bold;
+		
+		-webkit-box-sizing: border-box;
+			 -moz-box-sizing: border-box;
+				  box-sizing: border-box;
+	}
+	
+	.text-three-col__item__img {
+		height:80px;
+	}
+	
+	.object-content_gallery {
+		background-image:url("../images/object-content-gallery-bg.jpg");
+		padding-top:150px;
+		padding-bottom:96px;
+	}
+	
+	.waterwheel-gallery {
+		height:379px;
+	}
+	
+	.waterwheel-gallery__arrow {
+		width:12px;
+		height:18px;
+		background:url("../images/waterwheel-gallery-arrows.png") no-repeat;
+		cursor:pointer;
+		position:absolute;
+		top:50%;
+		left:0;
+		margin-top:-9px;
+	}
+	
+	.waterwheel-gallery__arrow_right {
+		background-position:-13px 0;
+		right:0;
+		left:auto;
+	}
+	/* --end-- object content */
+/* --END-- OBJECT DETAIL */
+
 /* FOOTER */
 	.footer {
 		width:100%;

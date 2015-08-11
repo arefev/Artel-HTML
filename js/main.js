@@ -1,4 +1,5 @@
 // MAIN JavaScript
+var arWaterwheelGallery = [];
 
 $(function(){
 	$(".menu__item").click(function(){
@@ -25,6 +26,40 @@ $(function(){
 	});
 	
 	setPositionFooter();
+	
+	// WATERWEEL GALLERY
+	$(".waterwheel-gallery").each(function(index){
+		var carousel = $(this).waterwheelCarousel({
+			flankingItems: 1,
+		});
+		
+		$(this).data("index", index);
+		arWaterwheelGallery.push(carousel);
+	});
+	
+	$(".waterwheel-gallery__arrow").click(function(){
+		var parrentIndex = $(this).closest(".waterwheel-gallery").data("index"),
+			object = arWaterwheelGallery[parrentIndex];
+			
+		if ($(this).is(".waterwheel-gallery__arrow_left")) {
+			object.prev();
+		} else {
+			object.next();
+		}
+	});
+});
+
+$(window).resize(function(){
+
+	// WATERWEEL GALLERY
+	$(".waterwheel-gallery__item").stop();
+	$(".waterwheel-gallery").each(function(index){
+		var object = arWaterwheelGallery[index];
+		
+		object.reload({
+			flankingItems: 1
+		});
+	});
 });
 
 function lockBody() {
